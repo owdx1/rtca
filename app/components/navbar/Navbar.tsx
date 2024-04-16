@@ -13,7 +13,7 @@ function Navbar({}: Props) {
     const session = useSession();
   return (
     <nav className='w-full h-24 items-center flex justify-between px-10'>
-      <p>tag</p>
+      <p>ogulcan&zeyno</p>
       {session.status === "authenticated" ? 
         ( 
           <div className='flex gap-4 items-center justify-center h-full px-4'>
