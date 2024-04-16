@@ -32,7 +32,7 @@ export const postData = async (message: string) => {
       useTLS: true
     })
 
-    pusher.trigger('chat' , 'send', {
+    await pusher.trigger('chat' , 'send', {
       message: `${JSON.stringify(message)}\n\n`,
       User: {
         name: session?.user?.name,
